@@ -1,0 +1,21 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	background: #F1F1F1;
+	
+}
+.my-container{
+	background:#E2E2E2;
+	
+}
+.back-video{
+	height:100vh;
+	width: 1900px;
+	object-fit: fill;
+}
+.video-2{
+	
+}
+

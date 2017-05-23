@@ -27,9 +27,9 @@
 						<div class="menu1-2">精華影片</div>
 						<div class="menu-1-down">
 							<ul>
-								<li><img class="rot1" src="images/logo.png" alt=""></li>
-								<li><img class="rot2" src="images/logo.png" alt=""></li>
-								<li><img class="rot3" src="images/logo.png" alt=""></li>
+								<li><img class="rot1" src="images/menu1-1.png" alt=""></li>
+								<li><img class="rot2" src="images/menu1-2.png" alt=""></li>
+								<li><img class="rot3" src="images/menu1-3.png" alt=""></li>
 							</ul>
 						</div>
 					</li>
@@ -38,9 +38,9 @@
 					<div class="menu1-2">主播介紹</div>
 					<div class="menu-2-down">
 							<ul>
-								<li><img class="rot1" src="images/logo.png" alt=""></li>
-								<li><img class="rot2" src="images/logo.png" alt=""></li>
-								<li><img class="rot3" src="images/logo.png" alt=""></li>
+								<li><img class="rot1" src="images/menu2-1.png" alt=""></li>
+								<li><img class="rot2" src="images/menu2-2.png" alt=""></li>
+								<li><img class="rot3" src="images/menu2-3.png" alt=""></li>
 							</ul>
 						</div>
 					</li>
@@ -51,10 +51,11 @@
 			</div>  <!-- my-navbar -->
 
 			<div class="slider slider-box">
+			<div class="arrow arrow-L"><img src="images/arrow-l.png" alt="">
+						</div>
 					<!-- 滑動圖片 -->
 				<ul class="slider-img">
-						<div class="arrow arrow-L"><img src="images/arrow-l.png" alt="">
-						</div>
+						
 						
 						<li class="sli back1">
 							<img  src="images/slider_player_01.png" alt="">
@@ -99,9 +100,7 @@
 		
 						</li>
 
-						<div class="arrow arrow-R">
-						<img src="images/arrow-r.png" alt="">
-						</div>
+						
 						<!-- 透明按鈕 -->
 						
 
@@ -112,7 +111,10 @@
 								<li class="li-btn btn3"></li>
 								<li class="li-btn btn4"></li>
 						</ul><!-- </ul> -->
-              
+
+              	<div class="arrow arrow-R">
+					<img src="images/arrow-r.png" alt="">
+				</div>
 			</div> 		<!-- slider-box-->  
 			
 
@@ -187,16 +189,21 @@
 
 	 // slider 滑動
 	 $(".li-btn.btn1").mouseenter(function(){
-	 	$(".slider-img").css("left","0")
+	 	$(".slider-img").stop(false).animate({
+	 		left:0}
+	 		)
 	 });
-	 $(".li-btn.btn2").mouseenter(function(){
-	 	$(".slider-img").css("left","-1500px")
+	  $(".li-btn.btn2").mouseenter(function(){
+	 	$(".slider-img").stop(false).animate({
+	 		left:-1500})
 	 });
 	 $(".li-btn.btn3").mouseenter(function(){
-	 	$(".slider-img").css("left","-3000px")
+	 	$(".slider-img").stop(false).animate({
+	 		left:-3000})
 	 });
 	 $(".li-btn.btn4").mouseenter(function(){
-	 	$(".slider-img").css("left","-4500px")
+	 	$(".slider-img").stop(false).animate({
+	 		left:-4500})
 	 });
 	    
 	    //arrow

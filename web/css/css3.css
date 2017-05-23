@@ -179,8 +179,9 @@
 	margin:0;
 	left: 0;
 	/*left: 100px;*/
-	transition: all .75s;
+	transition: all .75s cubic-bezier(.25,.96,.49,1);
 	overflow: hidden;
+
 	}
 
 .slider .slider-img .sli{
@@ -193,19 +194,13 @@
 	position: relative;
 	left: 0;
 }
-
-.slider .slider-img li img{
-	cursor: pointer;
-	height:90%;
-	object-fit: contain;
-
-}
-
 .sli.back1 img{
 	/*margin-left: 850px;*/
 	margin-left: 1000px;
-	margin-top: 30px;
+	margin-top: 50px;
 	cursor: pointer;
+	height: 90%;
+	object-fit: contain;
 }
 .slider-img .intro{
 	background:rgba(240,240,240,.6);
@@ -218,9 +213,13 @@
 .slider-img .int1{
 	width: 320px;
 	height: 435px;
-	top:80px;
-	left:300px;
+	top:200px;
+	left:400px;
 }
+.slider-img{
+
+}
+
 .slider-img .intro.mouseenter{
 	opacity: 1;
 	background:rgba(240,240,240,.9);
@@ -231,8 +230,9 @@
 }
 .back2 img{
 	margin-left:100px;
-	margin-top: 33px;
+	margin-top: 130px;
 	cursor: pointer;
+	height: 75%;
 }
 .back2 .int2{
 	top:260px;
@@ -241,24 +241,25 @@
 	height: 245px;
 }
 .back3 img{
-	margin-left:800px;
-	margin-top: 33px;
+	margin-left:950px;
+	margin-top: 100px;
+	height:75%;
 	cursor: pointer;
 }
 .back3 .int3{
-	top:270px;
-	left:300px;
+	top:350px;
+	left:600px;
 	width: 300px;
 	height: 270px;
 }
 .back4 img{
 	margin-left:800px;
-	margin-top: 33px;
+	margin-top: 100px;
 	cursor: pointer;
 }
 .back4 .int4{
-	top:180px;
-	left:280px;
+	top:100px;
+	left:380px;
 	width: 300px;
 	height: 405px;
 }
@@ -283,10 +284,11 @@
 
 }
 .arrow{
-
+	float:left;
+	position: absolute;
 	width:50px;
 	z-index:2;
-	margin:auto 0px;
+	
 	/*background: #523A92 url(../images/batman.jpg);*/
 }
 .arrow img{
@@ -295,8 +297,13 @@
 	/*background: #BB2A2A;*/
 	opacity: .9;
 }
-.arrow-R img{
- 	float:right;
+.arrow-L{
+	top:250px;
+}
+.arrow-R {
+	
+ 	right:55px;
+ 	top:250px;
 }
 
 /*------------------------------------------------------main-----------------*/
